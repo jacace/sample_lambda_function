@@ -30,9 +30,9 @@ async function sendToKafka(topicName, logLine) {
     //});
 
     const kafka = new Kafka({
-        //clientId: 'my-app',
-        brokers: ['pkc-ep9mm.us-east-2.aws.confluent.cloud:9092'], 
-        ssl: true,
+        clientId: 'my-app',
+        brokers: ['cluster-id.us-east-2.aws.confluent.cloud:9092'], 
+        ssl: false,
         sasl: {
             mechanism: 'plain', // scram-sha-256 or scram-sha-512
             username: '',
