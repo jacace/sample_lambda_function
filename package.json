@@ -1,0 +1,28 @@
+{
+  "name": "lambda_logs",
+  "version": "1.0.0",
+  "description": "Simple function to extract a log stream and send it to lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacace/lambda_logs.git"
+  },
+  "keywords": [
+    "lambda",
+    "nodejs",
+    "cloudwatch",
+    "kafka"
+  ],
+  "author": "jacace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacace/lambda_logs/issues"
+  },
+  "homepage": "https://github.com/jacace/lambda_logs#readme",
+  "dependencies": {
+    "node-rdkafka": "^2.9.1"
+  }
+}
