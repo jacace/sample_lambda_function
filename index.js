@@ -24,11 +24,6 @@ exports.handler = async (input, context) => {
 
 async function sendToKafka(topicName, logLine) {
     
-    //const kafka = new Kafka({
-    //  clientId: 'lambda-func',
-    //  brokers: ['b-2.kafka-cluster.pq034k.c9.kafka.us-east-1.amazonaws.com:9092','b-1.kafka-cluster.pq034k.c9.kafka.us-east-1.amazonaws.com:9092', 'b-3.kafka-cluster.pq034k.c9.kafka.us-east-1.amazonaws.com:9092']
-    //});
-
     const kafka = new Kafka({
         clientId: 'my-app',
         brokers: ['cluster-id.us-east-2.aws.confluent.cloud:9092'], 
