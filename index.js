@@ -1,3 +1,4 @@
+//Function to showcase a lambda function in nodejs for AWS
 //created by jacace
 
 var zlib = require('zlib');
@@ -26,7 +27,7 @@ async function sendToKafka(topicName, logLine) {
     
     const kafka = new Kafka({
         clientId: 'my-app',
-        brokers: ['cluster-id.us-east-2.aws.confluent.cloud:9092'], 
+        brokers: ['<cluster_id>'], 
         ssl: false,
         sasl: {
             mechanism: 'plain', // scram-sha-256 or scram-sha-512
